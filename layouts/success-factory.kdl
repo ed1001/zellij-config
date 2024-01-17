@@ -1,0 +1,97 @@
+layout {
+    tab name="Tribebase" cwd="/users/edwardphilips/code/tribebase" focus=true {
+        pane size=1 borderless=true {
+            plugin location="zellij:compact-bar"
+        }
+        pane  {
+          split_direction "vertical"
+          pane {
+            name "vim"
+            focus true
+          }
+          pane {
+            size "20%"
+            stacked true
+            split_direction "horizontal"
+            pane {
+                name "docker"
+                cwd "src/be"
+            }
+            pane {
+                name "backend"
+                cwd "src/be"
+            }
+            pane {
+                name "frontend"
+                cwd "src/fe"
+            }
+            pane {
+                name "auxillery"
+                cwd "src/be"
+            }
+          }
+      }
+      pane size=1 borderless=true {
+          plugin location="zellij:status-bar"
+      }
+    }
+    tab name="Tribebase Models" cwd="/Users/edwardphilips/code/tribebase-models-lib" {
+        pane size=1 borderless=true {
+            plugin location="zellij:compact-bar"
+        }
+        pane  {
+          split_direction "vertical"
+          pane {
+            name "vim"
+            focus true
+          }
+          pane {
+            size "20%"
+            stacked true
+            split_direction "horizontal"
+            pane {
+                name "models"
+            }
+            pane {
+                name "types"
+                cwd "types"
+            }
+            pane {
+                name "auxillery"
+            }
+          }
+      }
+      pane size=1 borderless=true {
+          plugin location="zellij:status-bar"
+      }
+    }
+    tab name="Auxillery" cwd="/Users/edwardphilips/code" {
+        pane size=1 borderless=true {
+            plugin location="zellij:compact-bar"
+        }
+        pane  {
+          split_direction "vertical"
+          pane {
+            name "vim"
+            focus true
+          }
+          pane {
+            size "20%"
+            stacked true
+            split_direction "horizontal"
+            pane {
+                name "aux1"
+            }
+            pane {
+                name "aux2"
+            }
+            pane {
+                name "aux3"
+            }
+          }
+      }
+      pane size=1 borderless=true {
+          plugin location="zellij:status-bar"
+      }
+    }
+}
