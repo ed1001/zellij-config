@@ -1,5 +1,5 @@
 layout {
-    tab name="Tribebase" cwd="/users/edwardphilips/code/tribebase" focus=true {
+    tab name="1" cwd="/users/edwardphillips/code/ed1001" focus=true {
         pane size=1 borderless=true {
             plugin location="zellij:compact-bar"
         }
@@ -14,20 +14,10 @@ layout {
             stacked true
             split_direction "horizontal"
             pane {
-                name "docker"
-                cwd "src/be"
+              name "main" 
             }
-            pane {
-                name "backend"
-                cwd "src/be"
-            }
-            pane {
-                name "frontend"
-                cwd "src/fe"
-            }
-            pane {
-                name "auxillery"
-                cwd "src/be"
+            pane { 
+              name "secondary" 
             }
           }
       }
@@ -35,7 +25,7 @@ layout {
           plugin location="zellij:status-bar"
       }
     }
-    tab name="Tribebase Models" cwd="/Users/edwardphilips/code/tribebase-models-lib" {
+    tab name="2" cwd="/Users/edwardphillips/code/ed1001" {
         pane size=1 borderless=true {
             plugin location="zellij:compact-bar"
         }
@@ -50,14 +40,10 @@ layout {
             stacked true
             split_direction "horizontal"
             pane {
-                name "models"
+              name "main" 
             }
-            pane {
-                name "types"
-                cwd "types"
-            }
-            pane {
-                name "auxillery"
+            pane { 
+              name "secondary" 
             }
           }
       }
@@ -65,7 +51,7 @@ layout {
           plugin location="zellij:status-bar"
       }
     }
-    tab name="Auxillery" cwd="/Users/edwardphilips/code" {
+    tab name="Auxillery" cwd="/Users/edwardphillips/code/ed1001" {
         pane size=1 borderless=true {
             plugin location="zellij:compact-bar"
         }

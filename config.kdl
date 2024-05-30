@@ -253,7 +253,7 @@ theme "tokyo-night"
 // The name of the default layout to load on startup
 // Default: "default"
 
-default_layout "success-factory"
+default_layout "layout"
 
 // Choose the mode that zellij uses when starting up.
 // Default: normal
