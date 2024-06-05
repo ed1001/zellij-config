@@ -1,31 +1,5 @@
 layout {
-    tab name="1" cwd="/users/edwardphillips/code/ed1001" focus=true {
-        pane size=1 borderless=true {
-            plugin location="zellij:compact-bar"
-        }
-        pane  {
-          split_direction "vertical"
-          pane {
-            name "vim"
-            focus true
-          }
-          pane {
-            size "20%"
-            stacked true
-            split_direction "horizontal"
-            pane {
-              name "main" 
-            }
-            pane { 
-              name "secondary" 
-            }
-          }
-      }
-      pane size=1 borderless=true {
-          plugin location="zellij:status-bar"
-      }
-    }
-    tab name="2" cwd="/Users/edwardphillips/code/ed1001" {
+    tab name="empowr" cwd="/users/edwardphillips/code/ed1001/empowr/" focus=true {
         pane size=1 borderless=true {
             plugin location="zellij:compact-bar"
         }
