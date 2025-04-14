@@ -1,5 +1,5 @@
 layout {
-    tab name="empowr" cwd="/users/edwardphillips/code/ed1001/empowr/" focus=true {
+    tab name="Empowr" cwd="/users/edwardphillips/code/ed1001/empowr/" focus=true {
         pane size=1 borderless=true {
             plugin location="zellij:compact-bar"
         }
@@ -14,10 +14,15 @@ layout {
             stacked true
             split_direction "horizontal"
             pane {
-              name "main" 
+              cwd "/users/edwardphillips/code/ed1001/empowr/apps/manager/"
+              name "manager" 
             }
             pane { 
-              name "secondary" 
+              cwd "/users/edwardphillips/code/ed1001/empowr/apps/platform/"
+              name "platform" 
+            }
+            pane { 
+              name "aux" 
             }
           }
       }
@@ -25,7 +30,38 @@ layout {
           plugin location="zellij:status-bar"
       }
     }
-    tab name="Auxillery" cwd="/Users/edwardphillips/code/ed1001" {
+    tab name="Empowr aux worktree" cwd="/Users/edwardphillips/code/ed1001/empowr-aux/" {
+        pane size=1 borderless=true {
+            plugin location="zellij:compact-bar"
+        }
+        pane  {
+          split_direction "vertical"
+          pane {
+            name "vim"
+            focus true
+          }
+          pane {
+            size "20%"
+            stacked true
+            split_direction "horizontal"
+            pane {
+              cwd "/users/edwardphillips/code/ed1001/empowr-aux/apps/manager/"
+              name "manager" 
+            }
+            pane { 
+              cwd "/users/edwardphillips/code/ed1001/empowr-aux/apps/platform/"
+              name "platform" 
+            }
+            pane {
+                name "aux3"
+            }
+          }
+      }
+      pane size=1 borderless=true {
+          plugin location="zellij:status-bar"
+      }
+    }
+    tab name="Aux" cwd="/Users/edwardphillips/code/ed1001/" {
         pane size=1 borderless=true {
             plugin location="zellij:compact-bar"
         }
