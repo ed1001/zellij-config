@@ -14,6 +14,10 @@ layout {
             stacked true
             split_direction "horizontal"
             pane {
+              cwd "/users/edwardphillips/code/ed1001/empowr/apps/expert-hub/"
+              name "expertHub" 
+            }
+            pane {
               cwd "/users/edwardphillips/code/ed1001/empowr/apps/manager/"
               name "manager" 
             }
@@ -23,37 +27,6 @@ layout {
             }
             pane { 
               name "aux" 
-            }
-          }
-      }
-      pane size=1 borderless=true {
-          plugin location="zellij:status-bar"
-      }
-    }
-    tab name="Empowr aux worktree" cwd="/Users/edwardphillips/code/ed1001/empowr-aux/" {
-        pane size=1 borderless=true {
-            plugin location="zellij:compact-bar"
-        }
-        pane  {
-          split_direction "vertical"
-          pane {
-            name "vim"
-            focus true
-          }
-          pane {
-            size "20%"
-            stacked true
-            split_direction "horizontal"
-            pane {
-              cwd "/users/edwardphillips/code/ed1001/empowr-aux/apps/manager/"
-              name "manager" 
-            }
-            pane { 
-              cwd "/users/edwardphillips/code/ed1001/empowr-aux/apps/platform/"
-              name "platform" 
-            }
-            pane {
-                name "aux3"
             }
           }
       }
