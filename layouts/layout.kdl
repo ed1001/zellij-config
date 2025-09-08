@@ -1,5 +1,5 @@
 layout {
-    tab name="Empowr" cwd="/users/edwardphillips/code/ed1001/empowr/" focus=true {
+    tab name="Cockpit" cwd="/${HOME}/code/ed1001/agent-cockpit/" focus=true {
         pane size=1 borderless=true {
             plugin location="zellij:compact-bar"
         }
@@ -14,19 +14,16 @@ layout {
             stacked true
             split_direction "horizontal"
             pane {
-              cwd "/users/edwardphillips/code/ed1001/empowr/apps/expert-hub/"
-              name "expertHub" 
+              cwd "/${HOME}/code/ed1001/agent-cockpit/"
+              name "1" 
             }
             pane {
-              cwd "/users/edwardphillips/code/ed1001/empowr/apps/manager/"
-              name "manager" 
+              cwd "/${HOME}/code/ed1001/agent-cockpit/"
+              name "2" 
             }
             pane { 
-              cwd "/users/edwardphillips/code/ed1001/empowr/apps/platform/"
-              name "platform" 
-            }
-            pane { 
-              name "aux" 
+              cwd "/${HOME}/code/ed1001/agent-cockpit/"
+              name "3" 
             }
           }
       }
@@ -34,7 +31,7 @@ layout {
           plugin location="zellij:status-bar"
       }
     }
-    tab name="Aux" cwd="/Users/edwardphillips/code/ed1001/" {
+    tab name="Frontend" cwd="/${HOME}/code/ed1001/Frontend/" {
         pane size=1 borderless=true {
             plugin location="zellij:compact-bar"
         }
@@ -49,13 +46,80 @@ layout {
             stacked true
             split_direction "horizontal"
             pane {
-                name "aux1"
+              cwd "/${HOME}/code/ed1001/Frontend/"
+              name "1" 
             }
             pane {
-                name "aux2"
+              cwd "/${HOME}/code/ed1001/Frontend/"
+              name "2" 
+            }
+            pane { 
+              cwd "/${HOME}/code/ed1001/Frontend/"
+              name "3" 
+            }
+          }
+      }
+      pane size=1 borderless=true {
+          plugin location="zellij:status-bar"
+      }
+    }
+    tab name="Services" cwd="/${HOME}/code/ed1001/functional-services/" {
+        pane size=1 borderless=true {
+            plugin location="zellij:compact-bar"
+        }
+        pane  {
+          split_direction "vertical"
+          pane {
+            name "vim"
+            focus true
+          }
+          pane {
+            size "20%"
+            stacked true
+            split_direction "horizontal"
+            pane {
+              cwd "/${HOME}/code/ed1001/functional-services/"
+              name "1" 
             }
             pane {
-                name "aux3"
+              cwd "/${HOME}/code/ed1001/functional-services/"
+              name "2" 
+            }
+            pane { 
+              cwd "/${HOME}/code/ed1001/functional-services/"
+              name "3" 
+            }
+          }
+      }
+      pane size=1 borderless=true {
+          plugin location="zellij:status-bar"
+      }
+    }
+    tab name="Aux" cwd="/${HOME}/code/ed1001/" {
+        pane size=1 borderless=true {
+            plugin location="zellij:compact-bar"
+        }
+        pane  {
+          split_direction "vertical"
+          pane {
+            name "vim"
+            focus true
+          }
+          pane {
+            size "20%"
+            stacked true
+            split_direction "horizontal"
+            pane {
+              cwd "/${HOME}/code/ed1001/"
+              name "1" 
+            }
+            pane {
+              cwd "/${HOME}/code/ed1001/"
+              name "2" 
+            }
+            pane { 
+              cwd "/${HOME}/code/ed1001/"
+              name "3" 
             }
           }
       }
